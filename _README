@@ -1,0 +1,31 @@
+$Id: _README 126 2007-03-21 00:18:34Z weekeat $
+
+Welcome to Smallapp!
+===================
+
+Before you proceed, here are some basic information regarding
+Smallapp. 
+
+Name: 		Smallapp
+Version: 	0.2 Beta
+Date: 		21st March, 2007
+Author: 	Wee Keat Chin <weekeat@visualdensity.com>
+Site: 		http://smallapp.weekeat.com
+Copyright:	(c) 2006-2007 Wee Keat Chin
+License: 	This product is licensed under the MIT License. Please refer to _LICENSE for more info.
+
+What's new
+==========
+
+0.2 Beta
+--------
+ - Added basic usage text
+ - Fixed some typos and updated comments
+ - Removed junk
+
+0.1 Alpha
+---------
+ - MVC-based framework architecture implemented
+ - Various sets of core function to support rapid development
+ - Templating structure for clearer separation & better maintainance
+ - New in-source documentation that is PHPDoc compliant

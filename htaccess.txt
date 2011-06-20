@@ -1,0 +1,16 @@
+###
+# Mod rewrite conditions and rules for Smallapp
+#
+# @author Wee Keat Chin <weekeat@visualdensity.com>
+# $Id: htaccess.txt 108 2006-08-24 22:06:19Z weekeat $
+# @package Smallapp
+##
+
+# Switch on rewrite engine
+RewriteEngine On
+
+# Rewrite rules
+RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php

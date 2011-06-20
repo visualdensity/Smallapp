@@ -1,0 +1,43 @@
+<?php
+/**
+ * Main configuration file of Smallapp
+ *
+ * Just a bunch of configuration that will make life 
+ * easier for other developers when they want to change
+ * simple things like path, email addresses, etc.
+ *
+ * @author Wee Keat <weekeat@miro.com.au>
+ * $Id: config.php-example 122 2007-03-20 23:49:44Z weekeat $
+ * @package Smallapp
+ **/
+
+/**
+ * Global constant that is used to ensure that current file
+ * is included or called via the main index page. This will
+ * prevent others from accessing this file directly.
+ **/
+defined( '_VALID_ENTRY_' ) or die( 'Are you trying to be a smart ass?' );
+
+
+// System settings
+$GLOBALS['_sef_url']			= 0; //please change the htaccess.txt to .htaccess if this is set to 1
+$GLOBALS['_default_func'] 		= 'content';
+$GLOBALS['_time_offset']		= 0;
+$GLOBALS['_template']			= '';
+$GLOBALS['_site_title']			= 'Smallapp framework';
+$GLOBALS['_site_title_spacer']	= ':';
+$GLOBALS['_page_title_']		= ''; //please DO NOT modify this
+
+// Path configurations
+$GLOBALS['_abs_path']			= ''; //with trailing slash - /path/to/smallapp/
+$GLOBALS['_site_url']			= ''; //with trailing slash - http://localhost/smallapp/
+
+// You shouldn't need to change any of these unless you know what you're doing
+$GLOBALS['_image_path']			= $GLOBALS['_site_url'] . 'images/';
+$GLOBALS['_image_abs_path']		= $GLOBALS['_abs_path'] . 'images/';
+$GLOBALS['_control_path'] 		= $GLOBALS['_abs_path'] . 'components/';
+$GLOBALS['_tpl_path']			= $GLOBALS['_abs_path'] . 'templates/';
+$GLOBALS['_view_path']			= $GLOBALS['_abs_path'] . 'views/';
+$GLOBALS['_widget_path']		= $GLOBALS['_abs_path'] . 'widgets/';
+$GLOBALS['_thirdparty']			= $GLOBALS['_abs_path'] . 'includes/thirdparty/';
+?>
